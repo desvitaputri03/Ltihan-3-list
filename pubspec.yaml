@@ -1,0 +1,55 @@
+name: flutter_app_desvita
+description: "A new Flutter project."
+
+# Mencegah publikasi tidak sengaja ke pub.dev
+publish_to: 'none'
+
+# Versi dan nomor build
+version: 1.0.0+1
+
+# Batasan versi SDK
+environment:
+  sdk: ">=3.7.0 <4.0.0"  # Diperbaiki agar sesuai dengan Dart 3.x
+
+# Dependensi
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Cupertino Icons untuk ikon bergaya iOS
+  cupertino_icons: ^1.0.8
+
+  # Paket untuk menampilkan pesan toast
+  flutter_styled_toast: ^2.0.0
+
+  # Package intl untuk format tanggal
+  intl: ^0.19.0  # Diperbarui ke versi 0.19.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # Flutter lints untuk analisis kode
+  flutter_lints: ^5.0.0
+
+# Konfigurasi khusus Flutter
+flutter:
+  # Sertakan Material Icons
+  uses-material-design: true
+
+  # Tambahkan aset (misalnya, gambar)
+  assets:
+    - gambar/yes.jpg  # Pastikan path-nya benar dan file-nya ada
+
+  # Contoh menambahkan font kustom (opsional)
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
